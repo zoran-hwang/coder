@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>用户登录</title>
+    <style type="text/css">
+        a{
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .index{
+            width:100px;
+            margin:50px auto;
+        }
+        #box{
+            width: 600px;
+            height: 420px;
+            margin: 50px auto;
+            font-size: 20px;
+            border-radius: 2px;
+            border:1px solid #dadada;
+        }
+        ul{
+            margin:0;
+            padding:0;
+            list-style: none;
+            width: 600px;
+            height: 50px;
+            display: block;
+            border-bottom: 1px solid #dadada;    /*灰色*/
+        }
+        li{
+            width: 300px;
+            height: 50px;
+            float: left;
+            text-align: center;
+            background:#ededed;
+            border-top: 2px solid #ededed;     /*浅灰*/
+        }    
+        #li1{
+            background:#fff;
+            border-top:2px solid #00BC9B;      /* li选项卡顶部颜色为浅绿色*/   
+        }
+        #a1{
+            color:#00BC9B;                      /*字体颜色与选项卡颜色一致*/
+        }
+        a{
+            line-height: 50px;
+            color: #707070;                     /*字体颜色为黑灰色*/
+            font-size: 20px;
+            font-weight: 600;
+        }
+        a:hover,a:visited{
+            text-decoration: none;
+        }
+        .liDiv{
+            clear:left;
+            margin:40px auto;
+            width:400px;
+        }
+        .liDiv label{
+            font-size: 16px;
+            color:#666;
+            font-weight: bold;
+        }
+        .liDiv input{
+            width: 220px;
+            height: 28px;
+            margin-left: 10px;
+            border:1px solid #d5d5d5;
+            border-radius: 4px;
+            text-indent: 5px; 
+        }
+        .userContent{
+            width: 350px;
+            height: 50px;
+            line-height: 50px;
+            margin-left: 50px;
+        }
+        input[type="button"]{
+            width:220px;
+            height:35px;
+            color:#fff;
+            border-radius:4px;
+            font-weight:600;
+            background:#1AE5B9;
+            border:1px solid #1AE5B9;
+            margin:10px 105px;
+        }
+        input[name="pswd2"]{
+            margin-left: -5px;
+        }
+        input[type="button"]:hover{ 
+            background:#00BC9B;
+            border:1px solid #00BC9B;
+        }
+        .lastlabel{
+            margin-left: -17px;
+        }
+    </style>
+	<script type="text/javascript">
+		window.onload=function(){
+			oLi=document.getElementsByTagName('li');
+			oDiv=document.getElementsByClassName('liDiv');
+			for(var i=0;i<oLi.length;i++){
+				oLi[i].index=i;
+				oLi[i].onclick=function(){
+					for(var i=0;i<oLi.length;i++){				
+						oLi[i].style.background="#f1f1f1";
+						oLi[i].getElementsByTagName('a')[0].style.color="#707070";				
+						oLi[i].style.borderTop="none";
+						oDiv[i].style.display="none";
+                    }           				
+					this.style.borderTop="2px solid #00bc9b";
+					this.style.background="#fff";
+					this.getElementsByTagName('a')[0].style.color="#00bc9b";
+					oDiv[this.index].style.display="block";
+				};
+			}
+		};
+	</script>
+</head>
+<body>
+    <div class="index">
+       <a href="/">返回首页</a> 
+    </div>
+    
+    <div id="box">
+        <ul>
+            <li id="li1"><a id="a1">登录</a></li>
+            <li><a>注册</a></li>
+        </ul>
+        <!-- 登录表单 -->
+        <div class="liDiv" style="display:block">
+            <div class="userContent">
+                <label for="userName">邮箱</label>
+                <input type="text" id="userName" placeholder="请输入注册所用邮箱">
+            </div>
+            <div class="userContent">
+                <label for="userPswd">密码</label>
+                <input type="pswd" id="userPswd" placeholder="请输入密码">
+            </div>
+        <input type="button" value="登录">
+		</div> 
+        <!-- 注册表单 -->
+        <div class="liDiv" style="display:none">
+            <div class="userContent">
+                <label for="uName">企业</label>
+                <input type="text" name="nameUser" id="uName" placeholder="请输入企业名称">
+            </div>
+            <div class="userContent">
+                <label for="uEmail">邮箱</label>
+                <input type="text" name="numUser" id="uEmail" placeholder="请输入注册邮箱"/>
+            </div>
+            <div class="userContent">
+                <label for="pswd1">密码</label>
+                <input type="pswd" name="pswd1" id="pswd1" placeholder="请输入密码"/>
+            </div>
+            <div class="userContent">
+                <label for="pswd2" class="lastlabel">确认密码</label>
+                <input type="pswd" name="pswd2" id="pswd2" placeholder="请确认你的密码"/>
+            </div>
+            <input type="button" value="立即注册">
+        </div>
+    </div>
+   <!--  底部信息 -->
+   <div id="footer">
+      
+   </div>
+</body>
+</html>

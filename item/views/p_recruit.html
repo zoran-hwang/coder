@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+	<title>码头帮，程序员求职最好的伙伴</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-theme.min.css"></link>
+	<style type="text/css">
+		a,a:active,a:hover{
+			text-decoration: none;
+			color:black;
+		}
+		li{
+			list-style-type:none;
+		}
+		nav{
+			font-size:22px;
+			text-align: center;
+			margin: 0 auto;
+		}
+		.fl{
+			float:left;
+		}
+		.fr{
+			float:right;
+		}
+		.wrap>a:hover{
+			background-color: #00b38a;
+			color:white;
+		}
+		.wrap>a.active{
+			background-color: #00b38a;
+			color:white;
+		}
+		.gray-border{
+			margin:10px 0;
+			border:1px solid #e8e8e8;
+		}
+		.update{
+				border-radius: 4px;
+				text-align: center;
+				
+		}
+		.wrap>span{
+				color:#555;
+				font-weight: 600;
+			}
+
+		@media (min-width: 768px){			
+			.update{
+				padding:20px;
+			}
+			#content{
+				margin-top: 60px;
+			}
+					
+			.wrap{
+				width:100%;
+				height:auto;
+				font-size:18px;
+				margin: 15px auto;
+			}			
+			.wrap>a{
+				margin:10px 20px;
+			}		
+			.position-list{
+				margin-bottom: 100px;
+			}			
+			.req>p{
+				font-size: 20px;
+				color:black;
+			}
+		}
+		@media (min-width: 480px) and (max-width: 767px){
+			#content{
+				margin-top: 50px;
+			}
+		}
+		@media (min-width: 320px) and (max-width: 480px){
+			.update>h1{
+				font-size:20px;
+			}
+			.wrap{
+				font-size:14px;
+				margin: 15px auto;
+			}
+			.wrap>a{
+				margin:3px;
+			}
+			#content{
+				margin-top: 50px;
+			}
+			.req>p{
+				font-size: 12px;
+				color:black;
+			}
+		}
+		@media (min-width: 350px) and (max-width: 480px){
+			h2{
+				font-size:23px;
+			}
+		}
+		@media (min-width: 320px) and (max-width: 350px){
+			h2{
+				font-size:19px;
+			}
+		}	
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	    <div class="navbar-header col-lg-offset-3">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" 
+	       		data-target="#example-navbar-collapse">
+	            <span class="sr-only">切换导航</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="#">BrandBrandBrand</a>
+	    </div>
+   		<div class="collapse navbar-collapse" id="example-navbar-collapse">
+	        <ul class="nav navbar-nav">
+	            <li><a href="/">首页</a></li>
+	            <li class="active"><a href="/p_recruit">招聘</a></li>
+	            <li><a href="/p_forum">论坛</a></li>
+	            <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">题库 <b class="caret"></b></a>
+		            <ul class="dropdown-menu">
+		                <li class="divider"></li>
+		                <li><a href="#">基础知识</a></li>
+		                <li class="divider"></li>
+		                <li><a href="#">公司套题</a></li>
+		                <li class="divider"></li>
+		                <li><a href="#">笔试真题</a></li>
+		            </ul>
+	        	</li>
+	        	<li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">黄智龙 <b class="caret"></b></a>
+		            <ul class="dropdown-menu">
+		                <li><a href="#">我的信息</a></li>
+		                <li><a href="#">退出登录</a></li>
+		            </ul>
+	        	</li> 
+	        	<button class="btn btn-danger btn-lg"><a href="/p_login" style="color:white">立即登陆</a></button>
+	    	</ul>
+   		</div>
+	</nav>
+	<div id="content" class="col-lg-8 col-lg-offset-2">
+		<div class="col-lg-12 col-xs-12">
+			<div class="update gray-border col-lg-12 col-xs-12">
+				<h1>上传简历，不再错过任何机会</h1>
+				<button class="btn btn-lg btn-success col-lg-2 col-lg-offset-5 col-xs-6 col-xs-offset-3">立即上传</button>
+			</div>
+		</div>
+
+		<div class="details col-lg-10 col-lg-offset-1 col-xs-12">
+			<ul>
+				<li class="wrap">
+					<span>职位名称：</span>
+					<a class="active" href="">JAVA</a>
+					<a href="">前端</a>
+					<a href="">PHP</a>
+					<a href="">C</a>
+					<a href="">IOS</a>
+					<a href="">ANDROID</a>
+				</li>
+				<li class="wrap">
+					<span>工作地点：</span>
+					<a class="active" href="">全国</a>
+					<a href="">北京</a>
+					<a href="">上海</a>
+					<a href="">杭州</a>
+					<a href="">广州</a>
+					<a href="">西安</a>
+					<a href="">深圳</a>
+				</li>				
+				<li class="wrap">
+					<span>工作经验：</span>
+					<a class="active" href="">应届毕业生</a>
+					<a href="">1年以下</a>
+					<a href="">1-3年</a>
+					<a href="">3-5年</a>
+					<a href="">5-10年</a>
+					<a href="">10年以上</a>
+				</li>
+				<li class="wrap">
+					<span>学历要求：</span>
+					<a class="active" href="">学历不限</a>
+					<a href="">大专</a>
+					<a href="">本科</a>
+					<a href="">硕士</a>
+					<a href="">博士
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="sort col-lg-10 col-lg-offset-1 col-xs-12">
+			<ul>
+				<li class="wrap">
+					<span>排序方式：</span>
+					<a class="active" href="">默认排序</a>
+					<a href="">薪资排序<icon class="glyphicon glyphicon-sort-by-attributes-alt"></icon></a>
+					
+				</li>
+			</ul>
+		</div>
+	
+		<div class="position-list">
+			<div class="fl col-lg-6 col-xs-12 gray-border">
+				<div class="fl col-lg-5 col-xs-7"><a href="#"><img class="img-responsive" src="/images/baidu1.jpg"></a></div>
+				<div class="fl col-xs-5">
+					<h2>百度</h2>
+					<div class="req">
+						<p>三年以上经验</p>
+						<p>20w-30w</p>
+						<p>北京</p>
+					</div>
+				</div>
+			</div>
+			<div class="fr col-lg-6 col-xs-12 gray-border">
+				<div class="fl col-lg-5 col-xs-7"><a href="#"><img class="img-responsive" src="/images/baidu1.jpg"></a></div>
+				<div class="fl col-xs-5">
+					<h2>阿里巴巴</h2>
+					<div class="req">
+						<p>三年以上经验</p>
+						<p>20w-30w</p>
+						<p>杭州</p>
+					</div>
+				</div>
+			</div>
+			<div class="fl col-lg-6 col-xs-12 gray-border">
+				<div class="fl col-lg-5 col-xs-7"><a href="#"><img class="img-responsive" src="/images/tencent1.jpg"></a></div>
+				<div class="fl col-xs-5">
+					<h2>腾讯</h2>
+					<div class="req">
+						<p>三年以上经验</p>
+						<p>20w-30w</p>
+						<p>上海</p>
+					</div>
+				</div>
+			</div>
+			<div class="fr col-lg-6 col-xs-12 gray-border">
+				<div class="fl col-lg-5 col-xs-7"><a href="#"><img class="img-responsive" src="/images/tencent1.jpg"></a></div>
+				<div class="fl col-xs-5">
+					<h2>美团</h2>
+					<div class="req">
+						<p>三年以上经验</p>
+						<p>20w-30w</p>
+						<p>上海</p>
+					</div>
+				</div>
+			</div>
+			<div class="fl col-lg-6 col-xs-12 gray-border">
+				<div class="fl col-lg-5 col-xs-7"><a href="#"><img class="img-responsive" src="/images/baidu1.jpg"></a></div>
+				<div class="fl col-xs-5">
+					<h2>百度</h2>
+					<div class="req">
+						<p>三年以上经验</p>
+						<p>20w-30w</p>
+						<p>北京</p>
+					</div>
+				</div>
+			</div>
+			<div class="fr col-lg-6 col-xs-12 gray-border">
+				<div class="fl col-lg-5 col-xs-7"><a href="#"><img class="img-responsive" src="/images/baidu1.jpg"></a></div>
+				<div class="fl col-xs-5">
+					<h2>阿里巴巴</h2>
+					<div class="req">
+						<p>三年以上经验</p>
+						<p>20w-30w</p>
+						<p>杭州</p>
+					</div>
+				</div>
+			</div>
+			<div class="fl col-lg-6 col-xs-12 gray-border">
+				<div class="fl col-lg-5 col-xs-7"><a href="#"><img class="img-responsive" src="/images/tencent1.jpg"></a></div>
+				<div class="fl col-xs-5">
+					<h2>腾讯</h2>
+					<div class="req">
+						<p>三年以上经验</p>
+						<p>20w-30w</p>
+						<p>上海</p>
+					</div>
+				</div>
+			</div>
+			<div class="fr col-lg-6 col-xs-12 gray-border">
+				<div class="fl col-lg-5 col-xs-7"><a href="#"><img class="img-responsive" src="/images/tencent.jpg"></a></div>
+				<div class="fl col-xs-5">
+					<h2>美团</h2>
+					<div class="req">
+						<p>三年以上经验</p>
+						<p>20w-30w</p>
+						<p>上海</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="/javascripts/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+</body>
+</html>
